@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/main_bg" >
+
+    <TextView
+        android:id="@+id/gesture_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:gravity="center_horizontal"
+        android:text="请在下面区域写上"
+        android:textColor="@color/word_color"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/gesture_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/gesture_title"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="“中国”"
+        android:textColor="@color/pink"
+        android:textSize="40sp" />
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/gesture_word"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/gestuer_bg"
+        android:gestureColor="@color/blue"
+        android:gestureStrokeType="multiple"
+        android:gestureStrokeWidth="10" >
+    </android.gesture.GestureOverlayView>
+
+    <TextView
+        android:id="@+id/gesture_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/gestureView"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="*写完字后，稍后将弹出确认对话框"
+        android:textColor="@color/word_color"
+        android:textSize="18sp" />
+
+</RelativeLayout>

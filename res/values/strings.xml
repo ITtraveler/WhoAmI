@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WhoAmI</string>
+    <string name="app_mark1">Powered by Thinking Collision !</string>
+    <string name="app_mark2">Copyright © 2016-2020</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="bn_regist">注   册</string>
+    <string name="bn_recognize">识   别</string>
+    <string name="bn_manager">账号管理</string>
+    <string name="hint_left_sliding">请放下手机后拿起\n继续向左滑</string>
+    <string name="hint_up_sliding">请放下手机后拿起\n继续向上滑</string>
+    <string name="bn_redraw">重   写</string>
+    <string name="bn_hand">提   交</string>
+    <string name="username">用户名</string>
+    <string name="score">匹配值</string>
+</resources>

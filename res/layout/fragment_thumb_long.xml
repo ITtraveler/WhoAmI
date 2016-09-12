@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg2"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/ftl_iv_explanation"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="14dp"
+        android:layout_gravity="right"
+        android:onClick="true"
+        android:src="@drawable/explanation" />
+
+    <TextView
+        android:id="@+id/tv_tLong_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_guide_style"
+        android:layout_margin="20dp"
+        android:text="请使用左手的大拇指进行指距测量，拇指最接近手掌的折痕与手机边缘对齐，点击拖动条。取值后，需进行确认，共确认5次" />
+
+    <TextView
+        android:id="@+id/tv_tLong_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/show_sb_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bn_confirm"
+        style="@style/button_main_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="确认" />
+
+</LinearLayout>

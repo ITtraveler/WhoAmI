@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" >
+        
+        <ImageView
+            android:id="@+id/main_bg"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:src="@drawable/logo_collision" />
+
+        <ImageView
+            android:id="@+id/main_mark"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo_mark" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/word_whoami" />
+
+    <Button
+        android:id="@+id/bn_regist"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bn_s_2"
+        android:onClick="regist"
+        android:text="@string/bn_regist"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/bn_recognize"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bn_s_2"
+        android:onClick="recognize"
+        android:text="@string/bn_recognize"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/bn_account_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bn_s_2"
+        android:onClick="account_manager"
+        android:text="@string/bn_manager"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp" >
+
+        <TextView
+            android:id="@+id/mark1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"
+            android:text="@string/app_mark1"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/mark2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="@string/app_mark2"
+            android:textColor="@color/text_color" />
+    </RelativeLayout>
+
+</LinearLayout>
